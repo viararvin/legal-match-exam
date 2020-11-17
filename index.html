@@ -73,7 +73,7 @@
         <!-- Client Reviews -->
         <div class="client-reviews col-lg-6 col-md-6 col-sm-12 col-md-offset-1">
           <h4 class="">Clients review LegalMatch lawyers</h4>
-          <div class="review-list">
+          <div id="client-reviews" class="review-list">
             <article class="review">
               <div class="avatar col-lg-2 col-md-3 col-sm-4">
                 <img src="img/client-1.png" alt="" />
@@ -99,7 +99,7 @@
                   <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis vulputate laoreet ... " </p>
                 </div>
                 <div class="link">
-                  <a class="read-review" href="#">Read Review  <span class="fa fa-book"></span></a>
+                  <a class="read-review" reviewid="1" href="#">Read Review  <span class="fa fa-book"></span></a>
                 </div>
               </div>
             </article>
@@ -128,7 +128,7 @@
                   <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis vulputate laoreet ... " </p>
                 </div>
                 <div class="link">
-                  <a class="read-review" href="#">Read Review  <span class="fa fa-book"></span></a>
+                  <a class="read-review" reviewid="2"  href="#">Read Review  <span class="fa fa-book"></span></a>
                 </div>
               </div>
             </article>
@@ -157,7 +157,7 @@
                   <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis vulputate laoreet ... " </p>
                 </div>
                 <div class="link">
-                  <a class="read-review" href="#">Read Review  <span class="fa fa-book"></span></a>
+                  <a class="read-review" reviewid="3"  href="#">Read Review  <span class="fa fa-book"></span></a>
                 </div>
               </div>
             </article>
@@ -197,6 +197,202 @@
             </div>
         </div>
     </footer>
+
+    <div id="client-review-modal" class="review-modal-container hidden">
+        <div class="review-modal">
+            <div class="rm-header">
+                <p class="title">Client Reviews</p>
+                <span id="crm-close-btn" class="close-modal fa fa-times">
+            </div>
+            <div class="rm-content">
+                <div class="profile-info">
+                    <div class="avatar">
+                        <img id="avatar-img" src="img/client-3.png" />
+                    </div>
+                    <div class="info">
+                        <p id="info-name" class="name">Brigida R.</p>
+                        <p id="info-location" class="location">Dallas TX</p>
+                        <p id="info-category" class="category">Family Law</p>
+                    </div>
+                </div>
+                <div class="ratings">
+                    <div class="ratings-header">
+                        <p class="title">
+                            Ratings <span class="count">(29 users)</span>
+                            <span class="rating">
+                                <span class="star-act fa fa-star"></span>
+                                <span class="star-act fa fa-star"></span>
+                                <span class="star-act fa fa-star"></span>
+                                <span class="star-act fa fa-star"></span>
+                                <span class="star-def fa fa-star"></span>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="overall">
+                        <p class="title">
+                            Overall
+                            <span class="rating">
+                                <span class="star-act fa fa-star"></span>
+                                <span class="star-act fa fa-star"></span>
+                                <span class="star-act fa fa-star"></span>
+                                <span class="star-act fa fa-star"></span>
+                                <span class="star-def fa fa-star"></span>
+                            </span>
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    Responded in a timely manner
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Answered questions clearly
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Understood needs
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Gave complete and clear information
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Knowledgeable in legal area
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Good value for money
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Would hire again
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Would recommend to friend
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Responded in a timely manner
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Responded in a timely manner
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Responded in a timely manner
+                                    <span class="rating">
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-act fa fa-star"></span>
+                                        <span class="star-def fa fa-star"></span>
+                                    </span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="featured-review">
+                    <p class="author">
+                        <span class="rating">
+                            <span class="star-act fa fa-star"></span>
+                            <span class="star-act fa fa-star"></span>
+                            <span class="star-act fa fa-star"></span>
+                            <span class="star-act fa fa-star"></span>
+                            <span class="star-act fa fa-star"></span>
+                        </span>
+                        by <span id="featured-review-author">Dexter Marchal</span>, <span id="featured-review-date">06/10/2016</span> 
+                    </p>
+                    <p id="featured-review-message" class="message">
+                        Mauris mattis vulputate laoreet. In rhoncus facilisis urna vitae hendrerit. Ut non fermentum nisi.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript

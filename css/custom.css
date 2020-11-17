@@ -256,3 +256,118 @@ footer .center-content p {
     font-size: 12px;
     font-family: 'GothamBook';
 }
+
+/* Client Review Modal */
+.review-modal-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.75);
+}
+.review-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    min-height: 500px;
+    padding: 0 25px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+.rm-header {
+    position: relative;
+}
+.rm-header p.title {
+    padding: 10px 0;
+    color: #000000;
+    font-size: 24px;
+    font-family: 'GothamBook';
+    border-bottom: 1px solid #666666;
+}
+.rm-header .close-modal {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+.rm-content {
+    margin-bottom: 15px;
+}
+.rm-content .profile-info {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+}
+.rm-content .profile-info .avatar {
+    float: left;
+    margin: 0;
+}
+.rm-content .profile-info .avatar img {
+    width: 84px;
+}
+.rm-content .profile-info .info {
+    float: left;
+    padding: 0 20px;
+}
+.rm-content .profile-info .info p {
+    color: #000000;
+    font-size: 16px;
+    font-family: 'GothamBook';
+    margin: 0;
+}
+.rm-content .profile-info .info p.name {
+    font-size: 30px;
+}
+.rm-content .profile-info .info p.location {
+    color: #979da3;
+}
+
+.ratings {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #666666;
+}
+.ratings .rating .star-def {
+    color: #666666;
+}
+.ratings .ratings-header p.title {
+    font-size: 24px;
+    font-family: 'GothamBook';
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666666;
+}
+.ratings .ratings-header p.title span.count {
+    font-size: 18px;
+}
+.ratings .overall {
+    max-height: 200px;
+    padding-right: 15%;
+    overflow-y: scroll;
+}
+.ratings .overall p {
+    color: #000000;
+    font-size: 14px;
+    font-family: 'GothamBook';
+}
+.ratings .overall p.title {
+    font-family: 'GothamMedium';
+}
+.ratings .overall p span.rating {
+    float: right;
+}
+
+.featured-review {
+    padding: 15px 0px;
+}
+.featured-review p {
+    font-size: 14px;
+    font-family: 'GothamBook';
+}
+.featured-review p.author {
+    font-weight: 600;
+    font-family: 'GothamMedium';
+}
