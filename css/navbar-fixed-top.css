@@ -1,0 +1,24 @@
+nav {
+    color: #001e5a;
+    font-family: 'GothamMedium';
+  }
+  nav.navbar {
+    margin: 0;
+  }
+  nav.navbar-default {
+    padding: 8px 0;
+    background-color: #ffffff;
+    border: none;
+  }
+  nav .navbar-logo {
+    float: left;
+  }
+  nav .logo-blurb {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    vertical-align: sub;
+  }
+  nav .header-blurb {
+    font-size: 12px;
+  }

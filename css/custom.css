@@ -1,0 +1,240 @@
+@font-face {
+    font-family: GothamMedium;
+    src: url(../fonts/GothamFont/Gotham/Gotham-Medium.otf);
+}
+@font-face {
+    font-family: GothamLight;
+    src: url(../fonts/GothamFont/Gotham/Gotham-Light.otf);
+}
+@font-face {
+    font-family: GothamBold;
+    src: url(../fonts/GothamFont/Gotham/Gotham-Bold.otf);
+}
+@font-face {
+    font-family: GothamBook;
+    src: url(../fonts/GothamFont/Gotham/Gotham-Book.otf);
+}
+@font-face {
+    font-family: GothamBookItalic;
+    src: url(../fonts/GothamFont/Gotham/Gotham-BookIta.otf);
+}
+
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover {
+    text-decoration: none;
+}
+
+.float-r {
+    float: right;
+}
+.float-l {
+    float: left;
+}
+
+.hdr-txt-b {
+    color: #001e5a;
+}
+.hdr-txt-g {
+    color: #3e9d03;
+}
+.star-def {
+    color: #dbdee1;
+}
+.star-act {
+    color: #d89108;
+}
+
+.wrapper {
+    display: inline-block;
+    width: 100%;
+    min-height: 400px;
+    padding: 30px 0px;
+    background: rgb(20,121,183);
+    background: radial-gradient(
+        circle at bottom, 
+        rgba(20,121,183,1) 0%, 
+        rgba(6,57,119,1) 50%, 
+        rgba(3,44,108,1) 100%
+    );
+}
+.main-content .content-header {
+    color: #ffffff;
+}
+.main-content .content-header .header-title {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 42px;
+    font-family: 'GothamLight';
+}
+.main-content .content-header .sub-title {
+    padding-left: 5px;
+    font-size: 30px;
+    font-family: 'GothamMedium';
+}
+
+.find-lawyer {
+    min-height: 300px;
+    padding: 25px 5px;
+}
+.find-lawyer .fl-dd {
+    margin-bottom: 25px;
+}
+.find-lawyer .fl-dd label { 
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'GothamMedium';
+}
+.find-lawyer .fl-dd .input-container {
+    position: relative;
+}
+.find-lawyer .fl-dd input {
+    width: 100%;
+    height: 64px;
+    padding-left: 60px;
+    border-radius: 32px;
+}
+.find-lawyer .fl-dd span.cir-num {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    height: 30px;
+    width: 30px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #d68d00;
+    border-radius: 15px;
+    line-height: 30px;
+}
+.find-lawyer .fl-message {
+    text-align: center;
+}
+.find-lawyer .fl-message p {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'GothamBook';
+}
+.find-lawyer .fl-message p a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.client-reviews {
+    color: #ffffff;
+}
+.client-reviews h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'GothamBook'; 
+}
+.client-reviews .review-list {
+    font-family: 'GothamLight';
+}
+.client-reviews .review-list article {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid #4f8ebc;
+}
+.client-reviews .review-list article:last-child {
+    border-bottom: none;
+}
+article.review .avatar {
+    padding: 0;
+    text-align: center;
+}
+article.review .avatar img {
+    max-width: 100%;
+}
+article.review .avatar .identification {
+    margin-top: 5px;
+}
+article.review .avatar .identification p {
+    margin: 0;
+    color: #fff;
+}
+article.review .avatar .identification p.name {
+    font-size: 13px;
+    font-family: 'GothamMedium';
+}
+article.review .avatar .identification p.location {
+    font-size: 11px;
+    font-family: 'GothamLight';
+}
+
+article.review .info {
+    font-family: 'GothamMedium';
+}
+article.review .info .subject {
+    margin-bottom: 15px;
+}
+article.review .info .subject p {
+
+}
+article.review .info .subject p span.title {
+    font-size: 12px;
+    margin-right: 10px;
+}
+article.review .info .content {
+    margin-bottom: 15px;
+    font-family: 'GothamBookItalic';
+}
+article.review .info .content p {
+    font-size: 11px;
+}
+article.review .info .link {
+    font-family: 'GothamBook';
+}
+article.review .info .link a {
+    float: right;
+    font-size: 11px;
+    color: #fbd243;
+}
+
+footer {
+    padding: 26px 0;
+}
+footer .left-content {
+    text-align: left;
+}
+footer .left-content img {
+    width: 180px;
+}
+footer .left-content p {
+    color: #001e5a;
+    font-size: 12px;
+    font-family: 'GothamMedium';
+    text-transform: uppercase;
+}
+footer .right-content {
+    text-align: right;
+}
+footer .right-content div {
+    margin-bottom: 15px;
+}
+footer .center-content {
+    text-align: center;
+}
+footer .center-content ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 24px;
+}
+footer .center-content ul li {
+    display: table-cell;
+    color: #919aa2;
+    font-size: 13px;
+    font-family: 'GothamBook';
+    line-height: 4;
+}
+footer .center-content p {
+    color: #919aa2;
+    font-size: 12px;
+    font-family: 'GothamBook';
+}
