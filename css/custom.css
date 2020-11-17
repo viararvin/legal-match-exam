@@ -124,6 +124,24 @@ a, a:hover {
     text-decoration: underline;
 }
 
+.find-lawyer .zip-city-dd .zip-city-dd-list {
+    position: absolute;
+    top: 100%;
+    left: 28px;
+    background: #ffffff;
+    z-index: 9;
+}
+.find-lawyer .zip-city-dd .zip-city-dd-list ul {
+    width: 100%;
+}
+.find-lawyer .zip-city-dd .zip-city-dd-list ul li {
+    padding: 10px 20px;
+}
+.find-lawyer .zip-city-dd .zip-city-dd-list ul li span {
+    color: #157ab8;
+}
+
+/* Client Reviews */
 .client-reviews {
     color: #ffffff;
 }
